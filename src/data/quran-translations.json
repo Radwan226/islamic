@@ -1,0 +1,264 @@
+{
+  "languages": [
+    {
+      "code": "en",
+      "name": "English",
+      "arabicName": "الإنجليزية",
+      "direction": "ltr"
+    },
+    {
+      "code": "fr",
+      "name": "Français",
+      "arabicName": "الفرنسية",
+      "direction": "ltr"
+    },
+    {
+      "code": "es",
+      "name": "Español",
+      "arabicName": "الإسبانية",
+      "direction": "ltr"
+    },
+    {
+      "code": "de",
+      "name": "Deutsch",
+      "arabicName": "الألمانية",
+      "direction": "ltr"
+    },
+    {
+      "code": "ur",
+      "name": "اردو",
+      "arabicName": "الأردية",
+      "direction": "rtl"
+    },
+    {
+      "code": "tr",
+      "name": "Türkçe",
+      "arabicName": "التركية",
+      "direction": "ltr"
+    },
+    {
+      "code": "fa",
+      "name": "فارسی",
+      "arabicName": "الفارسية",
+      "direction": "rtl"
+    },
+    {
+      "code": "id",
+      "name": "Bahasa Indonesia",
+      "arabicName": "الإندونيسية",
+      "direction": "ltr"
+    },
+    {
+      "code": "ms",
+      "name": "Bahasa Melayu",
+      "arabicName": "الماليزية",
+      "direction": "ltr"
+    },
+    {
+      "code": "ru",
+      "name": "Русский",
+      "arabicName": "الروسية",
+      "direction": "ltr"
+    }
+  ],
+  "translators": {
+    "en": [
+      {
+        "id": "sahih-international",
+        "name": "Sahih International",
+        "arabicName": "صحيح إنترناشيونال",
+        "description": "Clear and contemporary English translation"
+      },
+      {
+        "id": "pickthall",
+        "name": "M. M. Pickthall",
+        "arabicName": "محمد مرمادوك بيكتال",
+        "description": "Classical English translation"
+      },
+      {
+        "id": "yusuf-ali",
+        "name": "Abdullah Yusuf Ali",
+        "arabicName": "عبد الله يوسف علي",
+        "description": "Well-known English translation with commentary"
+      }
+    ],
+    "fr": [
+      {
+        "id": "hamidullah",
+        "name": "Muhammad Hamidullah",
+        "arabicName": "محمد حميد الله",
+        "description": "French translation by Muhammad Hamidullah"
+      }
+    ],
+    "es": [
+      {
+        "id": "garcia",
+        "name": "Julio Cortés",
+        "arabicName": "خوليو كورتيس",
+        "description": "Spanish translation"
+      }
+    ],
+    "de": [
+      {
+        "id": "bubenheim-elyas",
+        "name": "Bubenheim & Elyas",
+        "arabicName": "بوبنهايم وإلياس",
+        "description": "German translation"
+      }
+    ],
+    "ur": [
+      {
+        "id": "jalandhri",
+        "name": "Fateh Muhammad Jalandhri",
+        "arabicName": "فتح محمد جالندهري",
+        "description": "Urdu translation by Fateh Muhammad Jalandhri"
+      }
+    ],
+    "tr": [
+      {
+        "id": "diyanet",
+        "name": "Diyanet İşleri",
+        "arabicName": "ديانت إشلري",
+        "description": "Turkish translation by Turkish Religious Affairs"
+      }
+    ],
+    "fa": [
+      {
+        "id": "ansarian",
+        "name": "Hussein Ansarian",
+        "arabicName": "حسين أنصاريان",
+        "description": "Persian translation"
+      }
+    ],
+    "id": [
+      {
+        "id": "indonesian",
+        "name": "Indonesian Ministry of Religious Affairs",
+        "arabicName": "وزارة الشؤون الدينية الإندونيسية",
+        "description": "Indonesian translation"
+      }
+    ],
+    "ms": [
+      {
+        "id": "malaysian",
+        "name": "Abdullah Muhammad Basmeih",
+        "arabicName": "عبد الله محمد باسميح",
+        "description": "Malay translation"
+      }
+    ],
+    "ru": [
+      {
+        "id": "kuliev",
+        "name": "Elmir Kuliev",
+        "arabicName": "إلمير كولييف",
+        "description": "Russian translation by Elmir Kuliev"
+      }
+    ]
+  },
+  "sampleTranslations": {
+    "1": {
+      "1": {
+        "en": {
+          "sahih-international": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+          "pickthall": "In the name of Allah, the Beneficent, the Merciful.",
+          "yusuf-ali": "In the name of Allah, Most Gracious, Most Merciful."
+        },
+        "fr": {
+          "hamidullah": "Au nom d'Allah, le Tout Miséricordieux, le Très Miséricordieux."
+        },
+        "es": {
+          "garcia": "¡En el nombre de Alá, el Compasivo, el Misericordioso!"
+        },
+        "de": {
+          "bubenheim-elyas": "Im Namen Allahs, des Allerbarmers, des Barmherzigen."
+        },
+        "ur": {
+          "jalandhri": "شروع اللہ کے نام سے جو بڑا مہربان نہایت رحم والا ہے"
+        },
+        "tr": {
+          "diyanet": "Rahman ve Rahim olan Allah'ın adıyla."
+        },
+        "fa": {
+          "ansarian": "به نام خداوند بخشنده مهربان"
+        },
+        "id": {
+          "indonesian": "Dengan menyebut nama Allah Yang Maha Pemurah lagi Maha Penyayang."
+        },
+        "ms": {
+          "malaysian": "Dengan nama Allah, Yang Maha Pemurah, lagi Maha Mengasihani."
+        },
+        "ru": {
+          "kuliev": "Во имя Аллаха, Милостивого, Милосердного!"
+        }
+      },
+      "2": {
+        "en": {
+          "sahih-international": "All praise is due to Allah, Lord of the worlds.",
+          "pickthall": "Praise be to Allah, Lord of the Worlds,",
+          "yusuf-ali": "Praise be to Allah, the Cherisher and Sustainer of the worlds;"
+        },
+        "fr": {
+          "hamidullah": "Louange à Allah, Seigneur de l'univers."
+        },
+        "es": {
+          "garcia": "Las alabanzas a Alá, Señor del universo,"
+        },
+        "de": {
+          "bubenheim-elyas": "(Alles) Lob gehört Allah, dem Herrn der Weltenbewohner,"
+        },
+        "ur": {
+          "jalandhri": "تعریف اللہ کو (سزا) ہے جو تمام مخلوقات کا پالنے والا ہے"
+        },
+        "tr": {
+          "diyanet": "Hamd, âlemlerin Rabbi Allah'a mahsustur."
+        },
+        "fa": {
+          "ansarian": "ستایش مخصوص خداوندی است که پروردگار جهانیان است"
+        },
+        "id": {
+          "indonesian": "Segala puji bagi Allah, Tuhan semesta alam,"
+        },
+        "ms": {
+          "malaysian": "Segala puji tertentu bagi Allah, Tuhan yang memelihara dan mentadbirkan sekalian alam."
+        },
+        "ru": {
+          "kuliev": "Хвала Аллаху, Господу миров,"
+        }
+      },
+      "3": {
+        "en": {
+          "sahih-international": "The Entirely Merciful, the Especially Merciful,",
+          "pickthall": "The Beneficent, the Merciful.",
+          "yusuf-ali": "Most Gracious, Most Merciful;"
+        },
+        "fr": {
+          "hamidullah": "Le Tout Miséricordieux, le Très Miséricordieux,"
+        },
+        "es": {
+          "garcia": "el Compasivo, el Misericordioso,"
+        },
+        "de": {
+          "bubenheim-elyas": "dem Allerbarmer, dem Barmherzigen,"
+        },
+        "ur": {
+          "jalandhri": "بڑا مہربان نہایت رحم والا"
+        },
+        "tr": {
+          "diyanet": "Rahman ve Rahim olan,"
+        },
+        "fa": {
+          "ansarian": "بخشنده مهربان"
+        },
+        "id": {
+          "indonesian": "Maha Pemurah lagi Maha Penyayang,"
+        },
+        "ms": {
+          "malaysian": "Yang Maha Pemurah, lagi Maha Mengasihani."
+        },
+        "ru": {
+          "kuliev": "Милостивому, Милосердному,"
+        }
+      }
+    }
+  }
+}

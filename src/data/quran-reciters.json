@@ -1,0 +1,102 @@
+[
+  {
+    "id": "abdul-basit",
+    "name": "عبد الباسط عبد الصمد",
+    "arabicName": "عبد الباسط عبد الصمد",
+    "englishName": "Abdul Basit Abdul Samad",
+    "country": "مصر",
+    "style": "مجود",
+    "description": "من أشهر قراء القرآن الكريم، يتميز بصوته العذب والتجويد المتقن",
+    "baseUrl": "https://server8.mp3quran.net/basit/Rewayat-Hafs-A-n-Assem/"
+  },
+  {
+    "id": "al-ghamidi",
+    "name": "سعد الغامدي",
+    "arabicName": "سعد الغامدي",
+    "englishName": "Saad Al-Ghamdi",
+    "country": "السعودية",
+    "style": "مرتل",
+    "description": "إمام وخطيب المسجد الحرام، صوت هادئ ومؤثر",
+    "baseUrl": "https://server7.mp3quran.net/s_gmd/"
+  },
+  {
+    "id": "al-husary",
+    "name": "محمود خليل الحصري",
+    "arabicName": "محمود خليل الحصري",
+    "englishName": "Mahmoud Khalil Al-Husary",
+    "country": "مصر",
+    "style": "مجود",
+    "description": "شيخ المقرئين، معلم الأجيال في التجويد",
+    "baseUrl": "https://server13.mp3quran.net/husr/"
+  },
+  {
+    "id": "al-minshawi",
+    "name": "محمد صديق المنشاوي",
+    "arabicName": "محمد صديق المنشاوي",
+    "englishName": "Mohamed Siddiq Al-Minshawi",
+    "country": "مصر",
+    "style": "مجود",
+    "description": "صوت ساحر يأسر القلوب بتلاوته العذبة",
+    "baseUrl": "https://server10.mp3quran.net/minsh/"
+  },
+  {
+    "id": "al-sudais",
+    "name": "عبد الرحمن السديس",
+    "arabicName": "عبد الرحمن السديس",
+    "englishName": "Abdul Rahman Al-Sudais",
+    "country": "السعودية",
+    "style": "مرتل",
+    "description": "إمام المسجد الحرام، صوت خاشع ومؤثر",
+    "baseUrl": "https://server11.mp3quran.net/sds/"
+  },
+  {
+    "id": "al-shuraim",
+    "name": "سعود الشريم",
+    "arabicName": "سعود الشريم",
+    "englishName": "Saud Al-Shuraim",
+    "country": "السعودية",
+    "style": "مرتل",
+    "description": "إمام المسجد الحرام، تلاوة هادئة ومتقنة",
+    "baseUrl": "https://server8.mp3quran.net/shur/"
+  },
+  {
+    "id": "mishary",
+    "name": "مشاري راشد العفاسي",
+    "arabicName": "مشاري راشد العفاسي",
+    "englishName": "Mishary Rashid Alafasy",
+    "country": "الكويت",
+    "style": "مرتل",
+    "description": "صوت شاب مميز، محبوب في العالم الإسلامي",
+    "baseUrl": "https://server8.mp3quran.net/afs/"
+  },
+  {
+    "id": "al-tableei",
+    "name": "أحمد العجمي",
+    "arabicName": "أحمد العجمي", 
+    "englishName": "Ahmed Al-Ajmi",
+    "country": "السعودية",
+    "style": "مرتل",
+    "description": "صوت عذب وتلاوة متقنة",
+    "baseUrl": "https://server10.mp3quran.net/ajm/"
+  },
+  {
+    "id": "al-kurdi",
+    "name": "ياسر الدوسري",
+    "arabicName": "ياسر الدوسري",
+    "englishName": "Yasser Al-Dosari",
+    "country": "السعودية",
+    "style": "مرتل",
+    "description": "إمام المسجد الحرام، صوت شجي ومؤثر",
+    "baseUrl": "https://server11.mp3quran.net/yasser/"
+  },
+  {
+    "id": "maher",
+    "name": "ماهر المعيقلي",
+    "arabicName": "ماهر المعيقلي",
+    "englishName": "Maher Al-Muaiqly",
+    "country": "السعودية",
+    "style": "مرتل",
+    "description": "إمام المسجد الحرام، تلاوة خاشعة ومتميزة",
+    "baseUrl": "https://server12.mp3quran.net/maher/"
+  }
+]

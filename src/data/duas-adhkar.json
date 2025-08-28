@@ -1,0 +1,165 @@
+{
+  "morningAdhkar": {
+    "title": "أذكار الصباح",
+    "description": "الأذكار المستحبة في الصباح",
+    "items": [
+      {
+        "id": 1,
+        "arabic": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+        "translation": "We have reached the morning and at this very time unto Allah belongs all sovereignty, and all praise is for Allah. None has the right to be worshipped except Allah, alone, without partner, to Him belongs all sovereignty and praise and He is over all things omnipotent.",
+        "repetitions": 1,
+        "reward": "من قالها حين يصبح أعطي خير ذلك اليوم وفضله وهداه وبركته ونوره"
+      },
+      {
+        "id": 2,
+        "arabic": "اللَّهُمَّ بِكَ أَصْبَحْنَا وَبِكَ أَمْسَيْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوتُ وَإِلَيْكَ النُّشُورُ",
+        "translation": "O Allah, by your leave we have reached the morning and by Your leave we have reached the evening, by Your leave we live and die and unto You is our resurrection.",
+        "repetitions": 1,
+        "reward": "من الأذكار المحصنة التي تحفظ العبد بإذن الله"
+      },
+      {
+        "id": 3,
+        "arabic": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ اللَّهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+        "translation": "Ayat al-Kursi: Allah - there is no deity except Him, the Ever-Living, the Sustainer of [all] existence...",
+        "repetitions": 1,
+        "reward": "من قرأ آية الكرسي دبر كل صلاة مكتوبة لم يمنعه من دخول الجنة إلا أن يموت"
+      }
+    ]
+  },
+  "eveningAdhkar": {
+    "title": "أذكار المساء",
+    "description": "الأذكار المستحبة في المساء",
+    "items": [
+      {
+        "id": 1,
+        "arabic": "أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+        "translation": "We have reached the evening and at this very time unto Allah belongs all sovereignty, and all praise is for Allah...",
+        "repetitions": 1,
+        "reward": "حفظ ووقاية من الله تعالى"
+      },
+      {
+        "id": 2,
+        "arabic": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ لَكَ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+        "translation": "O Allah, You are my Lord, none has the right to be worshipped except You, You created me and I am Your servant and I abide to Your covenant and promise as best I can...",
+        "repetitions": 1,
+        "reward": "سيد الاستغفار، من قالها موقناً بها فمات من يومه دخل الجنة"
+      }
+    ]
+  },
+  "sleepDuas": {
+    "title": "أدعية النوم",
+    "description": "الأدعية المستحبة عند النوم",
+    "items": [
+      {
+        "id": 1,
+        "arabic": "اللَّهُمَّ بِاسْمِكَ أَمُوتُ وَأَحْيَا",
+        "translation": "O Allah, in Your name I live and die",
+        "repetitions": 1,
+        "reward": "دعاء مبارك عند النوم"
+      },
+      {
+        "id": 2,
+        "arabic": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ ثَلَاثاً وَثَلَاثِينَ، وَالْحَمْدُ لِلَّهِ ثَلَاثاً وَثَلَاثِينَ، وَاللَّهُ أَكْبَرُ أَرْبَعاً وَثَلَاثِينَ",
+        "translation": "Glory is to Allah and praise is to Him (33 times), praise is to Allah (33 times), Allah is the Most Great (34 times)",
+        "repetitions": 1,
+        "reward": "التسبيح عند النوم خير من الدنيا وما فيها"
+      }
+    ]
+  },
+  "foodDuas": {
+    "title": "أدعية الطعام",
+    "description": "الأدعية المستحبة عند تناول الطعام",
+    "items": [
+      {
+        "id": 1,
+        "arabic": "بِسْمِ اللَّهِ",
+        "translation": "In the name of Allah",
+        "repetitions": 1,
+        "reward": "البركة في الطعام",
+        "occasion": "عند بداية الطعام"
+      },
+      {
+        "id": 2,
+        "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنِي هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلَا قُوَّةٍ",
+        "translation": "All praise is due to Allah who has fed me this and provided it for me without any might nor power from myself",
+        "repetitions": 1,
+        "reward": "غفران الذنوب",
+        "occasion": "بعد الانتهاء من الطعام"
+      }
+    ]
+  },
+  "travelDuas": {
+    "title": "أدعية السفر",
+    "description": "الأدعية المستحبة عند السفر",
+    "items": [
+      {
+        "id": 1,
+        "arabic": "اللَّهُمَّ إِنَّا نَسْأَلُكَ فِي سَفَرِنَا هَذَا الْبِرَّ وَالتَّقْوَى، وَمِنَ الْعَمَلِ مَا تَرْضَى، اللَّهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَذَا وَاطْوِ عَنَّا بُعْدَهُ",
+        "translation": "O Allah, we ask You on this our journey for goodness and piety, and for works that are pleasing to You. O Allah, lighten this journey for us and make its distance easy for us",
+        "repetitions": 1,
+        "reward": "الحفظ والأمان في السفر"
+      }
+    ]
+  },
+  "generalDuas": {
+    "title": "أدعية عامة",
+    "description": "أدعية مفيدة للمسلم في جميع الأوقات",
+    "items": [
+      {
+        "id": 1,
+        "arabic": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+        "translation": "Our Lord, give us good in this world and good in the next world, and save us from the punishment of the Fire",
+        "repetitions": 1,
+        "reward": "دعاء جامع لخير الدنيا والآخرة"
+      },
+      {
+        "id": 2,
+        "arabic": "اللَّهُمَّ اغْفِرْ لِي ذَنْبِي وَوَسِّعْ لِي فِي دَارِي وَبَارِكْ لِي فِي رِزْقِي",
+        "translation": "O Allah, forgive my sin, make my home spacious for me, and bless me in my sustenance",
+        "repetitions": 1,
+        "reward": "المغفرة والبركة في البيت والرزق"
+      }
+    ]
+  },
+  "tasbihOptions": {
+    "title": "خيارات التسبيح",
+    "items": [
+      {
+        "id": 1,
+        "text": "سُبْحَانَ اللَّهِ",
+        "translation": "Glory is to Allah",
+        "count": 33
+      },
+      {
+        "id": 2,
+        "text": "الْحَمْدُ لِلَّهِ",
+        "translation": "All praise is for Allah",
+        "count": 33
+      },
+      {
+        "id": 3,
+        "text": "اللَّهُ أَكْبَرُ",
+        "translation": "Allah is the Greatest",
+        "count": 34
+      },
+      {
+        "id": 4,
+        "text": "لَا إِلَهَ إِلَّا اللَّهُ",
+        "translation": "There is no god except Allah",
+        "count": 100
+      },
+      {
+        "id": 5,
+        "text": "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى نَبِيِّنَا مُحَمَّدٍ",
+        "translation": "O Allah, send blessings and peace upon our Prophet Muhammad",
+        "count": 100
+      },
+      {
+        "id": 6,
+        "text": "أَسْتَغْفِرُ اللَّهَ",
+        "translation": "I seek forgiveness from Allah",
+        "count": 100
+      }
+    ]
+  }
+}

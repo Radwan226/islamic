@@ -1,0 +1,209 @@
+{
+  "cities": [
+    {
+      "id": "makkah",
+      "name": "مكة المكرمة",
+      "country": "السعودية",
+      "timezone": "Asia/Riyadh",
+      "coordinates": {
+        "latitude": 21.4225,
+        "longitude": 39.8262
+      },
+      "prayerTimes": {
+        "fajr": "05:15",
+        "sunrise": "06:45",
+        "dhuhr": "12:30",
+        "asr": "15:45",
+        "maghrib": "18:15",
+        "isha": "19:45"
+      }
+    },
+    {
+      "id": "madinah",
+      "name": "المدينة المنورة",
+      "country": "السعودية",
+      "timezone": "Asia/Riyadh",
+      "coordinates": {
+        "latitude": 24.4686,
+        "longitude": 39.6142
+      },
+      "prayerTimes": {
+        "fajr": "05:20",
+        "sunrise": "06:50",
+        "dhuhr": "12:35",
+        "asr": "15:50",
+        "maghrib": "18:20",
+        "isha": "19:50"
+      }
+    },
+    {
+      "id": "riyadh",
+      "name": "الرياض",
+      "country": "السعودية",
+      "timezone": "Asia/Riyadh",
+      "coordinates": {
+        "latitude": 24.7136,
+        "longitude": 46.6753
+      },
+      "prayerTimes": {
+        "fajr": "05:10",
+        "sunrise": "06:40",
+        "dhuhr": "12:25",
+        "asr": "15:40",
+        "maghrib": "18:10",
+        "isha": "19:40"
+      }
+    },
+    {
+      "id": "cairo",
+      "name": "القاهرة",
+      "country": "مصر",
+      "timezone": "Africa/Cairo",
+      "coordinates": {
+        "latitude": 30.0444,
+        "longitude": 31.2357
+      },
+      "prayerTimes": {
+        "fajr": "05:25",
+        "sunrise": "06:55",
+        "dhuhr": "12:40",
+        "asr": "15:55",
+        "maghrib": "18:25",
+        "isha": "19:55"
+      }
+    },
+    {
+      "id": "dubai",
+      "name": "دبي",
+      "country": "الإمارات",
+      "timezone": "Asia/Dubai",
+      "coordinates": {
+        "latitude": 25.2048,
+        "longitude": 55.2708
+      },
+      "prayerTimes": {
+        "fajr": "05:30",
+        "sunrise": "07:00",
+        "dhuhr": "12:45",
+        "asr": "16:00",
+        "maghrib": "18:30",
+        "isha": "20:00"
+      }
+    },
+    {
+      "id": "kuwait",
+      "name": "الكويت",
+      "country": "الكويت",
+      "timezone": "Asia/Kuwait",
+      "coordinates": {
+        "latitude": 29.3759,
+        "longitude": 47.9774
+      },
+      "prayerTimes": {
+        "fajr": "05:05",
+        "sunrise": "06:35",
+        "dhuhr": "12:20",
+        "asr": "15:35",
+        "maghrib": "18:05",
+        "isha": "19:35"
+      }
+    },
+    {
+      "id": "doha",
+      "name": "الدوحة",
+      "country": "قطر",
+      "timezone": "Asia/Qatar",
+      "coordinates": {
+        "latitude": 25.2854,
+        "longitude": 51.5310
+      },
+      "prayerTimes": {
+        "fajr": "05:08",
+        "sunrise": "06:38",
+        "dhuhr": "12:23",
+        "asr": "15:38",
+        "maghrib": "18:08",
+        "isha": "19:38"
+      }
+    },
+    {
+      "id": "casablanca",
+      "name": "الدار البيضاء",
+      "country": "المغرب",
+      "timezone": "Africa/Casablanca",
+      "coordinates": {
+        "latitude": 33.5731,
+        "longitude": -7.5898
+      },
+      "prayerTimes": {
+        "fajr": "06:15",
+        "sunrise": "07:45",
+        "dhuhr": "13:30",
+        "asr": "16:45",
+        "maghrib": "19:15",
+        "isha": "20:45"
+      }
+    },
+    {
+      "id": "tunis",
+      "name": "تونس",
+      "country": "تونس",
+      "timezone": "Africa/Tunis",
+      "coordinates": {
+        "latitude": 36.8065,
+        "longitude": 10.1815
+      },
+      "prayerTimes": {
+        "fajr": "05:45",
+        "sunrise": "07:15",
+        "dhuhr": "13:00",
+        "asr": "16:15",
+        "maghrib": "18:45",
+        "isha": "20:15"
+      }
+    },
+    {
+      "id": "algiers",
+      "name": "الجزائر",
+      "country": "الجزائر",
+      "timezone": "Africa/Algiers",
+      "coordinates": {
+        "latitude": 36.7538,
+        "longitude": 3.0588
+      },
+      "prayerTimes": {
+        "fajr": "05:50",
+        "sunrise": "07:20",
+        "dhuhr": "13:05",
+        "asr": "16:20",
+        "maghrib": "18:50",
+        "isha": "20:20"
+      }
+    }
+  ],
+  "prayerNames": {
+    "fajr": "الفجر",
+    "sunrise": "الشروق",
+    "dhuhr": "الظهر",
+    "asr": "العصر",
+    "maghrib": "المغرب",
+    "isha": "العشاء"
+  },
+  "azanAudios": [
+    {
+      "id": "madinah_azaan",
+      "name": "أذان المدينة المنورة",
+      "url": "https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
+    },
+    {
+      "id": "makkah_azaan", 
+      "name": "أذان مكة المكرمة",
+      "url": "https://www.soundjay.com/misc/sounds/bell-ringing-04.wav"
+    },
+    {
+      "id": "traditional_azaan",
+      "name": "أذان تقليدي",
+      "url": "https://www.soundjay.com/misc/sounds/bell-ringing-03.wav"
+    }
+  ]
+}

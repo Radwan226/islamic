@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <!-- Basic Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>البوابة الإسلامية - القرآن والحديث والأدعية والأذكار</title>
+    <meta name="description" content="موقع إسلامي شامل يحتوي على القرآن الكريم والأحاديث النبوية والأدعية والأذكار مع خدمة الاستماع والبحث المتقدم" />
+    <meta name="keywords" content="القرآن الكريم، الحديث النبوي، الأدعية، الأذكار، السبحة الإلكترونية، موقع إسلامي، PWA، مواقيت الصلاة" />
+    <meta name="author" content="البوابة الإسلامية" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Arabic" />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="application-name" content="البوابة الإسلامية" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="البوابة الإسلامية" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#059669" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="theme-color" content="#059669" />
+    
+    <!-- Icons and Manifest -->
+    <link rel="apple-touch-icon" href="/icons/icon-152x152.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="shortcut icon" href="/icons/icon-192x192.png" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="البوابة الإسلامية - موقع شامل للقرآن والحديث" />
+    <meta property="og:description" content="موقع إسلامي شامل يحتوي على القرآن الكريم والأحاديث النبوية والأدعية والأذكار" />
+    <meta property="og:site_name" content="البوابة الإسلامية" />
+    <meta property="og:locale" content="ar_AR" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="البوابة الإسلامية" />
+    <meta name="twitter:description" content="موقع شامل للقرآن والحديث والأدعية والأذكار" />
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@200..1000&family=Noto+Kufi+Arabic:wght@100..900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS for loading screen -->
+    <style>
+      #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #059669 0%, #047857 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        color: white;
+        font-family: 'Cairo', sans-serif;
+      }
+      
+      .loading-content {
+        text-align: center;
+      }
+      
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        border-top: 4px solid white;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 20px;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      .loading-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .loading-subtitle {
+        font-size: 1rem;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body dir="rtl">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+      <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <div class="loading-title">البوابة الإسلامية</div>
+        <div class="loading-subtitle">جارٍ تحميل المحتوى...</div>
+      </div>
+    </div>
+    
+    <div id="root"></div>
+    
+    <!-- Scripts -->
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      // Hide loading screen when app loads
+      window.addEventListener('load', () => {
+        const loadingScreen = document.getElementById('loading-screen');
+        if (loadingScreen) {
+          setTimeout(() => {
+            loadingScreen.style.opacity = '0';
+            loadingScreen.style.transition = 'opacity 0.5s ease-out';
+            setTimeout(() => {
+              loadingScreen.remove();
+            }, 500);
+          }, 1000);
+        }
+      });
+      
+      // Register Service Worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', async () => {
+          try {
+            const registration = await navigator.serviceWorker.register('/sw.js');
+            console.log('Service Worker registered successfully:', registration.scope);
+            
+            // Listen for updates
+            registration.addEventListener('updatefound', () => {
+              const newWorker = registration.installing;
+              if (newWorker) {
+                newWorker.addEventListener('statechange', () => {
+                  if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                    // New content available, show update notification
+                    if (confirm('تحديث جديد متاح للموقع. هل تريد إعادة تحميل الصفحة؟')) {
+                      window.location.reload();
+                    }
+                  }
+                });
+              }
+            });
+          } catch (error) {
+            console.log('Service Worker registration failed:', error);
+          }
+        });
+      }
+      
+      // PWA Install Prompt
+      let deferredPrompt;
+      
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        
+        // Show install button after a delay
+        setTimeout(() => {
+          showInstallPrompt();
+        }, 30000); // Show after 30 seconds
+      });
+      
+      function showInstallPrompt() {
+        if (deferredPrompt && !window.matchMedia('(display-mode: standalone)').matches) {
+          const installBanner = document.createElement('div');
+          installBanner.id = 'install-banner';
+          installBanner.innerHTML = `
+            <div style="
+              position: fixed;
+              bottom: 20px;
+              left: 20px;
+              right: 20px;
+              background: #059669;
+              color: white;
+              padding: 15px 20px;
+              border-radius: 10px;
+              box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+              z-index: 1000;
+              text-align: center;
+              font-family: 'Cairo', sans-serif;
+            ">
+              <div style="margin-bottom: 10px; font-weight: bold;">📱 تثبيت التطبيق</div>
+              <div style="margin-bottom: 15px; font-size: 0.9rem;">ثبّت البوابة الإسلامية على هاتفك لوصول أسرع</div>
+              <div>
+                <button onclick="installApp()" style="
+                  background: white;
+                  color: #059669;
+                  border: none;
+                  padding: 8px 20px;
+                  border-radius: 5px;
+                  font-weight: bold;
+                  margin-left: 10px;
+                  cursor: pointer;
+                ">تثبيت</button>
+                <button onclick="dismissInstallPrompt()" style="
+                  background: transparent;
+                  color: white;
+                  border: 1px solid white;
+                  padding: 8px 20px;
+                  border-radius: 5px;
+                  cursor: pointer;
+                ">لاحقاً</button>
+              </div>
+            </div>
+          `;
+          document.body.appendChild(installBanner);
+        }
+      }
+      
+      function installApp() {
+        if (deferredPrompt) {
+          deferredPrompt.prompt();
+          deferredPrompt.userChoice.then((choiceResult) => {
+            if (choiceResult.outcome === 'accepted') {
+              console.log('تم قبول تثبيت التطبيق');
+            }
+            deferredPrompt = null;
+            dismissInstallPrompt();
+          });
+        }
+      }
+      
+      function dismissInstallPrompt() {
+        const banner = document.getElementById('install-banner');
+        if (banner) {
+          banner.remove();
+        }
+      }
+      
+      // Check if running as PWA
+      if (window.matchMedia('(display-mode: standalone)').matches) {
+        console.log('يعمل كتطبيق PWA');
+        document.documentElement.classList.add('pwa-mode');
+      }
+    </script>
+  </body>
+</html>

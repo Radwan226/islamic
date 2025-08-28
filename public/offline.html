@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لا يوجد اتصال بالإنترنت - البوابة الإسلامية</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .container {
+      max-width: 500px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      opacity: 0.8;
+    }
+    
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+    
+    .features {
+      text-align: right;
+      margin: 25px 0;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+    }
+    
+    .features h3 {
+      margin-bottom: 15px;
+      color: #ffd700;
+    }
+    
+    .features ul {
+      list-style: none;
+    }
+    
+    .features li {
+      margin: 8px 0;
+      position: relative;
+      padding-right: 25px;
+    }
+    
+    .features li::before {
+      content: "✓";
+      position: absolute;
+      right: 0;
+      color: #4ade80;
+      font-weight: bold;
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 12px 30px;
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease;
+      font-weight: 500;
+      margin: 5px;
+    }
+    
+    .button:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-2px);
+    }
+    
+    .retry-button {
+      background: #059669;
+      border-color: #059669;
+    }
+    
+    .retry-button:hover {
+      background: #047857;
+      border-color: #047857;
+    }
+    
+    .connection-status {
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 0.9rem;
+    }
+    
+    .offline {
+      background: rgba(239, 68, 68, 0.2);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+    
+    .online {
+      background: rgba(34, 197, 94, 0.2);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+    }
+    
+    .loading {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 1s ease-in-out infinite;
+      margin-left: 10px;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    .verse {
+      margin: 20px 0;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      border-right: 4px solid #ffd700;
+    }
+    
+    .verse-text {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 5px;
+      line-height: 1.8;
+    }
+    
+    .verse-ref {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">📶</div>
+    <h1>لا يوجد اتصال بالإنترنت</h1>
+    <p>يبدو أنك غير متصل بالإنترنت. لا تقلق، يمكنك الاستفادة من بعض المحتويات المحفوظة.</p>
+    
+    <div class="verse">
+      <div class="verse-text">
+        وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ
+      </div>
+      <div class="verse-ref">سورة الطلاق - آية 3</div>
+    </div>
+    
+    <div class="features">
+      <h3>المتاح حالياً:</h3>
+      <ul>
+        <li>قراءة المحتوى المحفوظ مسبقاً</li>
+        <li>الوصول للآيات والأدعية المحفوظة</li>
+        <li>استخدام السبحة الإلكترونية</li>
+        <li>مراجعة الملف الشخصي والإحصائيات</li>
+      </ul>
+    </div>
+    
+    <div class="connection-status offline" id="connectionStatus">
+      🔴 غير متصل بالإنترنت
+    </div>
+    
+    <div style="margin-top: 25px;">
+      <button class="button retry-button" onclick="checkConnection()">
+        <span id="retryText">إعادة المحاولة</span>
+        <span id="loadingSpinner" class="loading" style="display: none;"></span>
+      </button>
+      <a href="/" class="button">العودة للموقع</a>
+    </div>
+    
+    <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">
+      سيتم إعادة الاتصال تلقائياً عند توفر الإنترنت
+    </p>
+  </div>
+
+  <script>
+    // Check connection status
+    function updateConnectionStatus() {
+      const status = document.getElementById('connectionStatus');
+      if (navigator.onLine) {
+        status.className = 'connection-status online';
+        status.innerHTML = '🟢 متصل بالإنترنت';
+        
+        // Auto redirect after a moment
+        setTimeout(() => {
+          window.location.href = '/';
+        }, 1000);
+      } else {
+        status.className = 'connection-status offline';
+        status.innerHTML = '🔴 غير متصل بالإنترنت';
+      }
+    }
+    
+    function checkConnection() {
+      const retryText = document.getElementById('retryText');
+      const loadingSpinner = document.getElementById('loadingSpinner');
+      
+      retryText.style.display = 'none';
+      loadingSpinner.style.display = 'inline-block';
+      
+      // Simulate checking connection
+      setTimeout(() => {
+        retryText.style.display = 'inline';
+        loadingSpinner.style.display = 'none';
+        
+        if (navigator.onLine) {
+          window.location.href = '/';
+        } else {
+          updateConnectionStatus();
+        }
+      }, 1500);
+    }
+    
+    // Listen for connection changes
+    window.addEventListener('online', updateConnectionStatus);
+    window.addEventListener('offline', updateConnectionStatus);
+    
+    // Check initial status
+    updateConnectionStatus();
+    
+    // Auto-check connection every 30 seconds
+    setInterval(() => {
+      if (navigator.onLine) {
+        updateConnectionStatus();
+      }
+    }, 30000);
+  </script>
+</body>
+</html>
